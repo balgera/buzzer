@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Buzzer_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="time remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7d-MW-pZB">
+                                <rect key="frame" x="37" y="202" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1O-tm-qUo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Gametime" id="tcF-Cz-8zf">
+                                        <barButtonItem key="leftBarButtonItem" title="Start" id="u4M-9n-zE3">
+                                            <connections>
+                                                <action selector="startTimerButton:" destination="BYZ-38-t0r" id="w5Z-kq-sqb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Pause" id="wd4-yW-VYE">
+                                            <connections>
+                                                <action selector="pauseTimerButton:" destination="BYZ-38-t0r" id="j4x-1w-xjN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0M7-nz-3rx">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Enable extra audio" id="SYV-DW-lF1">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="QYn-Ij-l4I">
+                                            <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="fsb-Z4-Nxs">
+                                                <rect key="frame" x="260" y="552" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="audioSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="d4x-mG-8NV"/>
+                                                </connections>
+                                            </switch>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KF-Wa-1av">
+                                <rect key="frame" x="37" y="262" width="300" height="300"/>
+                                <state key="normal" backgroundImage="button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buzzerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9m-CB-F5i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oki-NF-K7O">
+                                <rect key="frame" x="37" y="102" width="300" height="102"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="112"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0M7-nz-3rx" secondAttribute="bottom" id="2f2-KP-LtD"/>
+                            <constraint firstItem="d1O-tm-qUo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="W1h-xc-TbN"/>
+                            <constraint firstItem="0M7-nz-3rx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="eEi-cN-2ua"/>
+                            <constraint firstItem="d1O-tm-qUo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iGr-WO-556"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0M7-nz-3rx" secondAttribute="trailing" constant="-16" id="pcF-0k-2e7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d1O-tm-qUo" secondAttribute="trailing" constant="-16" id="xn7-8w-yLe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="audioSwitchOutlet" destination="fsb-Z4-Nxs" id="gQT-cM-a2G"/>
+                        <outlet property="pauseTimerBtnOutlet" destination="wd4-yW-VYE" id="8Vq-Xb-haB"/>
+                        <outlet property="remainingLabel" destination="d7d-MW-pZB" id="Cy8-Xz-8fB"/>
+                        <outlet property="startTimerBtnOutlet" destination="u4M-9n-zE3" id="GoD-cx-gJ0"/>
+                        <outlet property="timerLabel" destination="oki-NF-K7O" id="whs-Yn-TOk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381.5" y="526.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button.png" width="800" height="800"/>
+    </resources>
+</document>

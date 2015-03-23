@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB82AC631AB5E2460049B7DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB82AC621AB5E2460049B7DC /* AppDelegate.swift */; };
+		EB82AC651AB5E2460049B7DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB82AC641AB5E2460049B7DC /* ViewController.swift */; };
+		EB82AC681AB5E2460049B7DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC661AB5E2460049B7DC /* Main.storyboard */; };
+		EB82AC6A1AB5E2460049B7DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC691AB5E2460049B7DC /* Images.xcassets */; };
+		EB82AC6D1AB5E2460049B7DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC6B1AB5E2460049B7DC /* LaunchScreen.xib */; };
+		EB82AC791AB5E2460049B7DC /* Buzzer_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB82AC781AB5E2460049B7DC /* Buzzer_TimerTests.swift */; };
+		EB82AC831AB5E5CC0049B7DC /* Buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC821AB5E5CC0049B7DC /* Buzz.wav */; };
+		EB82AC841AB5E6580049B7DC /* Buzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC821AB5E5CC0049B7DC /* Buzz.wav */; };
+		EB82AC8C1AB6359A0049B7DC /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC8B1AB6359A0049B7DC /* button.png */; };
+		EB82AC8E1AB637B10049B7DC /* buzzer sfx.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC8D1AB637B10049B7DC /* buzzer sfx.wav */; };
+		EB82AC901AB63C7B0049B7DC /* countdown audio.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB82AC8F1AB63C7B0049B7DC /* countdown audio.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB82AC731AB5E2460049B7DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB82AC551AB5E2460049B7DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB82AC5C1AB5E2460049B7DC;
+			remoteInfo = "Buzzer Timer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB82AC5D1AB5E2460049B7DC /* Buzzer Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buzzer Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB82AC611AB5E2460049B7DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB82AC621AB5E2460049B7DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB82AC641AB5E2460049B7DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB82AC671AB5E2460049B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB82AC691AB5E2460049B7DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB82AC6C1AB5E2460049B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EB82AC721AB5E2460049B7DC /* Buzzer TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Buzzer TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB82AC771AB5E2460049B7DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB82AC781AB5E2460049B7DC /* Buzzer_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buzzer_TimerTests.swift; sourceTree = "<group>"; };
+		EB82AC821AB5E5CC0049B7DC /* Buzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Buzz.wav; sourceTree = "<group>"; };
+		EB82AC8B1AB6359A0049B7DC /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		EB82AC8D1AB637B10049B7DC /* buzzer sfx.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "buzzer sfx.wav"; sourceTree = "<group>"; };
+		EB82AC8F1AB63C7B0049B7DC /* countdown audio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "countdown audio.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB82AC5A1AB5E2460049B7DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB82AC6F1AB5E2460049B7DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB82AC541AB5E2460049B7DC = {
+			isa = PBXGroup;
+			children = (
+				EB82AC5F1AB5E2460049B7DC /* Buzzer Timer */,
+				EB82AC751AB5E2460049B7DC /* Buzzer TimerTests */,
+				EB82AC5E1AB5E2460049B7DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB82AC5E1AB5E2460049B7DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AC5D1AB5E2460049B7DC /* Buzzer Timer.app */,
+				EB82AC721AB5E2460049B7DC /* Buzzer TimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB82AC5F1AB5E2460049B7DC /* Buzzer Timer */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AC921AB63EF80049B7DC /* Assets */,
+				EB82AC911AB63EE90049B7DC /* Audio */,
+				EB82AC621AB5E2460049B7DC /* AppDelegate.swift */,
+				EB82AC641AB5E2460049B7DC /* ViewController.swift */,
+				EB82AC661AB5E2460049B7DC /* Main.storyboard */,
+				EB82AC691AB5E2460049B7DC /* Images.xcassets */,
+				EB82AC6B1AB5E2460049B7DC /* LaunchScreen.xib */,
+				EB82AC601AB5E2460049B7DC /* Supporting Files */,
+			);
+			path = "Buzzer Timer";
+			sourceTree = "<group>";
+		};
+		EB82AC601AB5E2460049B7DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AC611AB5E2460049B7DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB82AC751AB5E2460049B7DC /* Buzzer TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AC781AB5E2460049B7DC /* Buzzer_TimerTests.swift */,
+				EB82AC761AB5E2460049B7DC /* Supporting Files */,
+			);
+			path = "Buzzer TimerTests";
+			sourceTree = "<group>";
+		};
+		EB82AC761AB5E2460049B7DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AC771AB5E2460049B7DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB82AC911AB63EE90049B7DC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AC821AB5E5CC0049B7DC /* Buzz.wav */,
+				EB82AC8F1AB63C7B0049B7DC /* countdown audio.wav */,
+				EB82AC8D1AB637B10049B7DC /* buzzer sfx.wav */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		EB82AC921AB63EF80049B7DC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EB82AC8B1AB6359A0049B7DC /* button.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB82AC5C1AB5E2460049B7DC /* Buzzer Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB82AC7C1AB5E2460049B7DC /* Build configuration list for PBXNativeTarget "Buzzer Timer" */;
+			buildPhases = (
+				EB82AC591AB5E2460049B7DC /* Sources */,
+				EB82AC5A1AB5E2460049B7DC /* Frameworks */,
+				EB82AC5B1AB5E2460049B7DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Buzzer Timer";
+			productName = "Buzzer Timer";
+			productReference = EB82AC5D1AB5E2460049B7DC /* Buzzer Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB82AC711AB5E2460049B7DC /* Buzzer TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB82AC7F1AB5E2460049B7DC /* Build configuration list for PBXNativeTarget "Buzzer TimerTests" */;
+			buildPhases = (
+				EB82AC6E1AB5E2460049B7DC /* Sources */,
+				EB82AC6F1AB5E2460049B7DC /* Frameworks */,
+				EB82AC701AB5E2460049B7DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB82AC741AB5E2460049B7DC /* PBXTargetDependency */,
+			);
+			name = "Buzzer TimerTests";
+			productName = "Buzzer TimerTests";
+			productReference = EB82AC721AB5E2460049B7DC /* Buzzer TimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB82AC551AB5E2460049B7DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Brett Algera";
+				TargetAttributes = {
+					EB82AC5C1AB5E2460049B7DC = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 4568697VGZ;
+					};
+					EB82AC711AB5E2460049B7DC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = EB82AC5C1AB5E2460049B7DC;
+					};
+				};
+			};
+			buildConfigurationList = EB82AC581AB5E2460049B7DC /* Build configuration list for PBXProject "Buzzer Timer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB82AC541AB5E2460049B7DC;
+			productRefGroup = EB82AC5E1AB5E2460049B7DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB82AC5C1AB5E2460049B7DC /* Buzzer Timer */,
+				EB82AC711AB5E2460049B7DC /* Buzzer TimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB82AC5B1AB5E2460049B7DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82AC8E1AB637B10049B7DC /* buzzer sfx.wav in Resources */,
+				EB82AC8C1AB6359A0049B7DC /* button.png in Resources */,
+				EB82AC681AB5E2460049B7DC /* Main.storyboard in Resources */,
+				EB82AC6D1AB5E2460049B7DC /* LaunchScreen.xib in Resources */,
+				EB82AC901AB63C7B0049B7DC /* countdown audio.wav in Resources */,
+				EB82AC6A1AB5E2460049B7DC /* Images.xcassets in Resources */,
+				EB82AC831AB5E5CC0049B7DC /* Buzz.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB82AC701AB5E2460049B7DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82AC841AB5E6580049B7DC /* Buzz.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB82AC591AB5E2460049B7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82AC651AB5E2460049B7DC /* ViewController.swift in Sources */,
+				EB82AC631AB5E2460049B7DC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB82AC6E1AB5E2460049B7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB82AC791AB5E2460049B7DC /* Buzzer_TimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB82AC741AB5E2460049B7DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB82AC5C1AB5E2460049B7DC /* Buzzer Timer */;
+			targetProxy = EB82AC731AB5E2460049B7DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB82AC661AB5E2460049B7DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB82AC671AB5E2460049B7DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB82AC6B1AB5E2460049B7DC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB82AC6C1AB5E2460049B7DC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB82AC7A1AB5E2460049B7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB82AC7B1AB5E2460049B7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB82AC7D1AB5E2460049B7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Buzzer Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB82AC7E1AB5E2460049B7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Buzzer Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EB82AC801AB5E2460049B7DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Buzzer TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buzzer Timer.app/Buzzer Timer";
+			};
+			name = Debug;
+		};
+		EB82AC811AB5E2460049B7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Buzzer TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buzzer Timer.app/Buzzer Timer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB82AC581AB5E2460049B7DC /* Build configuration list for PBXProject "Buzzer Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB82AC7A1AB5E2460049B7DC /* Debug */,
+				EB82AC7B1AB5E2460049B7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB82AC7C1AB5E2460049B7DC /* Build configuration list for PBXNativeTarget "Buzzer Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB82AC7D1AB5E2460049B7DC /* Debug */,
+				EB82AC7E1AB5E2460049B7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB82AC7F1AB5E2460049B7DC /* Build configuration list for PBXNativeTarget "Buzzer TimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB82AC801AB5E2460049B7DC /* Debug */,
+				EB82AC811AB5E2460049B7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB82AC551AB5E2460049B7DC /* Project object */;
+}
